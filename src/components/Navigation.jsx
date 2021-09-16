@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import './Navigation.css';
 
 const Navigation = (props) => (
-  <div id="myNav" className={`overlay ${props.opennav? 'opennav':'closenav'}`}>
+  <div id="myNav" className={`overlay ${props.opennav ? 'opennav' : 'closenav'}`}>
     <a className="closebtn" onClick={() => props.closeNav()} >&times;</a>
     <div className="overlay-content">
-    <Link to="/" onClick={() => props.closeNav()}>Home</Link>
+      <Link to="/" onClick={() => props.closeNav()}>Home</Link>
       <Link to="/vitamin" onClick={() => props.closeNav()}>Vitamin Juice</Link>
-      <a href="">Clothing</a>
-      <a href="">Supplements</a>
-      <a href="">Contact</a>
+      <Link to="">Clothing</Link>
+      <Link to="">Supplements</a>
+      <Link to="">Contact</Link>
     </div>
   </div>
 );
