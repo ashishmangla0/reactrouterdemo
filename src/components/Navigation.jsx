@@ -9,7 +9,6 @@ const Navigation = (props) => (
       <Link to="/" onClick={() => props.closeNav()}>Home</Link>
       <Link to="/vitamin" onClick={() => props.closeNav()}>Vitamin Juice</Link>
       <Link to="">Clothing</Link>
-      <Link to="">Supplements</a>
       <Link to="">Contact</Link>
     </div>
   </div>
